@@ -331,3 +331,6 @@ data = {
 
 response = requests.post(line_api_url, headers=headers, json=data)
 print(response.status_code, response.text)
+
+if __name__ == "__main__":
+    app.run()
