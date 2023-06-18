@@ -354,11 +354,21 @@ def callback():
 
 @handler.add(MessageEvent, message=TextMessage)
 def message_text(event):
-    container_obj = FlexSendMessage.new_from_json_dict(flexcontent)
+    flex_message = FlexSendMessage(
+        alt_text='hello',
+        contents=flexcontent
+    )
+    # container_obj = FlexSendMessage.new_from_json_dict(flexcontent)
+    # container_obj = {
+    #     "type": "flex",
+    #     "altText": "This is a Flex Message",
+    #     "contents": flexcontent
+    # }
     line_bot_api.reply_message(
         event.reply_token,
         # TextSendMessage(text=event.message.text)
-        TextSendMessage(message=container_obj)
+        # TextSendMessage(message=container_obj)
+        flex_message
     )
 
 
