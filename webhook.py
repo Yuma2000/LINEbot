@@ -3,6 +3,7 @@ import flex
 
 app = Flask(__name__)
 
+
 @app.route("/webhook", methods=["POST"])
 def webhook():
     # LINE Messaging APIからのリクエストを受信
@@ -16,9 +17,9 @@ def webhook():
             message_type = event["message"]["type"]
             if message_type == "text":
                 # ユーザがテキストメッセージを送信した場合の処理
-                text = event["message"]["text"]
-                user_id = event["source"]["userId"]
-                reply_token = event["replyToken"]
+                # text = event["message"]["text"]
+                # user_id = event["source"]["userId"]
+                # reply_token = event["replyToken"]
 
                 # テキストメッセージの内容を使って適切な応答を生成する処理を実装
                 flex.response()
