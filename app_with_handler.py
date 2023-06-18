@@ -333,6 +333,297 @@ flexcontent = {
   ]
 }
 
+flexcontent1 = {
+  "type": "carousel",
+  "contents": [
+    {
+      "type": "bubble",
+      "size": "micro",
+      "header": {
+        "type": "box",
+        "layout": "vertical",
+        "contents": [
+          {
+            "type": "text",
+            "text": "酒井",
+            "color": "#ffffff",
+            "align": "start",
+            "size": "md",
+            "gravity": "center"
+          },
+          {
+            "type": "text",
+            "text": "悩み度"
+          },
+          {
+            "type": "text",
+            "text": "12%",
+            "color": "#ffffff",
+            "align": "start",
+            "size": "xs",
+            "gravity": "center",
+            "margin": "lg"
+          },
+          {
+            "type": "box",
+            "layout": "vertical",
+            "contents": [
+              {
+                "type": "box",
+                "layout": "vertical",
+                "contents": [
+                  {
+                    "type": "filler"
+                  }
+                ],
+                "width": "12%",
+                "backgroundColor": "#0D8186",
+                "height": "6px"
+              }
+            ],
+            "backgroundColor": "#9FD8E36E",
+            "height": "6px",
+            "margin": "sm"
+          }
+        ],
+        "backgroundColor": "#27ACB2",
+        "paddingTop": "19px",
+        "paddingAll": "12px",
+        "paddingBottom": "16px"
+      },
+      "body": {
+        "type": "box",
+        "layout": "vertical",
+        "contents": [
+          {
+            "type": "box",
+            "layout": "horizontal",
+            "contents": [
+              {
+                "type": "text",
+                "text": "Active window",
+                "color": "#8C8C8C",
+                "size": "sm",
+              }
+            ],
+            "flex": 1
+          },
+          {
+            "type": "text",
+            "text": "IntellijIDEA"
+          },
+          {
+            "type": "text",
+            "text": "タイプ数",
+            "color": "#8C8C8C",
+            "size": "sm",
+          },
+          {
+            "type": "text",
+            "text": "12"
+          }
+        ],
+        "spacing": "md",
+        "paddingAll": "12px"
+      },
+      "styles": {
+        "footer": {
+        }
+      }
+    },
+    {
+      "type": "bubble",
+      "size": "micro",
+      "header": {
+        "type": "box",
+        "layout": "vertical",
+        "contents": [
+          {
+            "type": "text",
+            "text": "篠崎",
+            "color": "#ffffff",
+            "align": "start",
+            "size": "md",
+            "gravity": "center"
+          },
+          {
+            "type": "text",
+            "text": "悩み度"
+          },
+          {
+            "type": "text",
+            "text": "83%",
+            "color": "#ffffff",
+            "align": "start",
+            "size": "xs",
+            "gravity": "center",
+            "margin": "lg"
+          },
+          {
+            "type": "box",
+            "layout": "vertical",
+            "contents": [
+              {
+                "type": "box",
+                "layout": "vertical",
+                "contents": [
+                  {
+                    "type": "filler"
+                  }
+                ],
+                "width": "83%",
+                "backgroundColor": "#DE5658",
+                "height": "6px"
+              }
+            ],
+            "backgroundColor": "#FAD2A76E",
+            "height": "6px",
+            "margin": "sm"
+          }
+        ],
+        "backgroundColor": "#FF6B6E",
+        "paddingTop": "19px",
+        "paddingAll": "12px",
+        "paddingBottom": "16px"
+      },
+      "body": {
+        "type": "box",
+        "layout": "vertical",
+        "contents": [
+          {
+            "type": "box",
+            "layout": "horizontal",
+            "contents": [
+              {
+                "type": "text",
+                "text": "Active window",
+                "color": "#8C8C8C",
+                "size": "sm",
+              }
+            ],
+            "flex": 1
+          },
+          {
+            "type": "text",
+            "text": "FireFox"
+          },
+          {
+            "type": "text",
+            "text": "タイプ数",
+            "color": "#8C8C8C",
+            "size": "sm",
+          },
+          {
+            "type": "text",
+            "text": "68"
+          }
+        ],
+        "spacing": "md",
+        "paddingAll": "12px"
+      },
+      "styles": {
+        "footer": {
+        }
+      }
+    },
+    {
+      "type": "bubble",
+      "size": "micro",
+      "header": {
+        "type": "box",
+        "layout": "vertical",
+        "contents": [
+          {
+            "type": "text",
+            "text": "小豆畑",
+            "color": "#ffffff",
+            "align": "start",
+            "size": "md",
+            "gravity": "center"
+          },
+          {
+            "type": "text",
+            "text": "悩み度"
+          },
+          {
+            "type": "text",
+            "text": "42%",
+            "color": "#ffffff",
+            "align": "start",
+            "size": "xs",
+            "gravity": "center",
+            "margin": "lg"
+          },
+          {
+            "type": "box",
+            "layout": "vertical",
+            "contents": [
+              {
+                "type": "box",
+                "layout": "vertical",
+                "contents": [
+                  {
+                    "type": "filler"
+                  }
+                ],
+                "width": "42%",
+                "backgroundColor": "#7D51E4",
+                "height": "6px"
+              }
+            ],
+            "backgroundColor": "#9FD8E36E",
+            "height": "6px",
+            "margin": "sm"
+          }
+        ],
+        "backgroundColor": "#A17DF5",
+        "paddingTop": "19px",
+        "paddingAll": "12px",
+        "paddingBottom": "16px"
+      },
+      "body": {
+        "type": "box",
+        "layout": "vertical",
+        "contents": [
+          {
+            "type": "box",
+            "layout": "horizontal",
+            "contents": [
+              {
+                "type": "text",
+                "text": "Active window",
+                "color": "#8C8C8C",
+                "size": "sm",
+              }
+            ],
+            "flex": 1
+          },
+          {
+            "type": "text",
+            "text": "PyCharm"
+          },
+          {
+            "type": "text",
+            "text": "タイプ数",
+            "color": "#8C8C8C",
+            "size": "sm",
+          },
+          {
+            "type": "text",
+            "text": "55"
+          }
+        ],
+        "spacing": "md",
+        "paddingAll": "12px"
+      },
+      "styles": {
+        "footer": {
+        }
+      }
+    }
+  ]
+}
+
 
 @app.route("/callback", methods=['POST'])
 def callback():
@@ -366,7 +657,7 @@ def message_text(event):
     elif event.message.text == "新人の悩み度を確認！":
         flex_message = FlexSendMessage(
         alt_text='hello',
-        contents=flexcontent
+        contents=flexcontent1
         )
         line_bot_api.reply_message(
             event.reply_token,
