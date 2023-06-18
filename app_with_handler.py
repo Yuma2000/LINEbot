@@ -42,6 +42,297 @@ if channel_access_token is None:
 line_bot_api = LineBotApi(channel_access_token)
 handler = WebhookHandler(channel_secret)
 
+flexcontent = {
+  "type": "carousel",
+  "contents": [
+    {
+      "type": "bubble",
+      "size": "micro",
+      "header": {
+        "type": "box",
+        "layout": "vertical",
+        "contents": [
+          {
+            "type": "text",
+            "text": "エンジニアA",
+            "color": "#ffffff",
+            "align": "start",
+            "size": "md",
+            "gravity": "center"
+          },
+          {
+            "type": "text",
+            "text": "忙しさ"
+          },
+          {
+            "type": "text",
+            "text": "70%",
+            "color": "#ffffff",
+            "align": "start",
+            "size": "xs",
+            "gravity": "center",
+            "margin": "lg"
+          },
+          {
+            "type": "box",
+            "layout": "vertical",
+            "contents": [
+              {
+                "type": "box",
+                "layout": "vertical",
+                "contents": [
+                  {
+                    "type": "filler"
+                  }
+                ],
+                "width": "70%",
+                "backgroundColor": "#0D8186",
+                "height": "6px"
+              }
+            ],
+            "backgroundColor": "#9FD8E36E",
+            "height": "6px",
+            "margin": "sm"
+          }
+        ],
+        "backgroundColor": "#27ACB2",
+        "paddingTop": "19px",
+        "paddingAll": "12px",
+        "paddingBottom": "16px"
+      },
+      "body": {
+        "type": "box",
+        "layout": "vertical",
+        "contents": [
+          {
+            "type": "box",
+            "layout": "horizontal",
+            "contents": [
+              {
+                "type": "text",
+                "text": "Active window",
+                "color": "#8C8C8C",
+                "size": "sm",
+              }
+            ],
+            "flex": 1
+          },
+          {
+            "type": "text",
+            "text": "Google chrome"
+          },
+          {
+            "type": "text",
+            "text": "タイプ数",
+            "color": "#8C8C8C",
+            "size": "sm",
+          },
+          {
+            "type": "text",
+            "text": "30"
+          }
+        ],
+        "spacing": "md",
+        "paddingAll": "12px"
+      },
+      "styles": {
+        "footer": {
+        }
+      }
+    },
+    {
+      "type": "bubble",
+      "size": "micro",
+      "header": {
+        "type": "box",
+        "layout": "vertical",
+        "contents": [
+          {
+            "type": "text",
+            "text": "エンジニアB",
+            "color": "#ffffff",
+            "align": "start",
+            "size": "md",
+            "gravity": "center"
+          },
+          {
+            "type": "text",
+            "text": "忙しさ"
+          },
+          {
+            "type": "text",
+            "text": "30%",
+            "color": "#ffffff",
+            "align": "start",
+            "size": "xs",
+            "gravity": "center",
+            "margin": "lg"
+          },
+          {
+            "type": "box",
+            "layout": "vertical",
+            "contents": [
+              {
+                "type": "box",
+                "layout": "vertical",
+                "contents": [
+                  {
+                    "type": "filler"
+                  }
+                ],
+                "width": "30%",
+                "backgroundColor": "#DE5658",
+                "height": "6px"
+              }
+            ],
+            "backgroundColor": "#FAD2A76E",
+            "height": "6px",
+            "margin": "sm"
+          }
+        ],
+        "backgroundColor": "#FF6B6E",
+        "paddingTop": "19px",
+        "paddingAll": "12px",
+        "paddingBottom": "16px"
+      },
+      "body": {
+        "type": "box",
+        "layout": "vertical",
+        "contents": [
+          {
+            "type": "box",
+            "layout": "horizontal",
+            "contents": [
+              {
+                "type": "text",
+                "text": "Active window",
+                "color": "#8C8C8C",
+                "size": "sm",
+              }
+            ],
+            "flex": 1
+          },
+          {
+            "type": "text",
+            "text": "vscode"
+          },
+          {
+            "type": "text",
+            "text": "タイプ数",
+            "color": "#8C8C8C",
+            "size": "sm",
+          },
+          {
+            "type": "text",
+            "text": "20"
+          }
+        ],
+        "spacing": "md",
+        "paddingAll": "12px"
+      },
+      "styles": {
+        "footer": {
+        }
+      }
+    },
+    {
+      "type": "bubble",
+      "size": "micro",
+      "header": {
+        "type": "box",
+        "layout": "vertical",
+        "contents": [
+          {
+            "type": "text",
+            "text": "エンジニアC",
+            "color": "#ffffff",
+            "align": "start",
+            "size": "md",
+            "gravity": "center"
+          },
+          {
+            "type": "text",
+            "text": "忙しさ"
+          },
+          {
+            "type": "text",
+            "text": "100%",
+            "color": "#ffffff",
+            "align": "start",
+            "size": "xs",
+            "gravity": "center",
+            "margin": "lg"
+          },
+          {
+            "type": "box",
+            "layout": "vertical",
+            "contents": [
+              {
+                "type": "box",
+                "layout": "vertical",
+                "contents": [
+                  {
+                    "type": "filler"
+                  }
+                ],
+                "width": "100%",
+                "backgroundColor": "#7D51E4",
+                "height": "6px"
+              }
+            ],
+            "backgroundColor": "#9FD8E36E",
+            "height": "6px",
+            "margin": "sm"
+          }
+        ],
+        "backgroundColor": "#A17DF5",
+        "paddingTop": "19px",
+        "paddingAll": "12px",
+        "paddingBottom": "16px"
+      },
+      "body": {
+        "type": "box",
+        "layout": "vertical",
+        "contents": [
+          {
+            "type": "box",
+            "layout": "horizontal",
+            "contents": [
+              {
+                "type": "text",
+                "text": "Active window",
+                "color": "#8C8C8C",
+                "size": "sm",
+              }
+            ],
+            "flex": 1
+          },
+          {
+            "type": "text",
+            "text": "Slack"
+          },
+          {
+            "type": "text",
+            "text": "タイプ数",
+            "color": "#8C8C8C",
+            "size": "sm",
+          },
+          {
+            "type": "text",
+            "text": "5"
+          }
+        ],
+        "spacing": "md",
+        "paddingAll": "12px"
+      },
+      "styles": {
+        "footer": {
+        }
+      }
+    }
+  ]
+}
+
 
 @app.route("/callback", methods=['POST'])
 def callback():
@@ -63,9 +354,11 @@ def callback():
 
 @handler.add(MessageEvent, message=TextMessage)
 def message_text(event):
+    container_obj = FlexSendMessage.new_from_json_dict(flexcontent)
     line_bot_api.reply_message(
         event.reply_token,
-        TextSendMessage(text=event.message.text)
+        # TextSendMessage(text=event.message.text)
+        TextSendMessage(message=container_obj)
     )
 
 
