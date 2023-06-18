@@ -76,7 +76,6 @@ flexcontent2 = {
                 "text": "Active window",
                 "color": "#8C8C8C",
                 "size": "sm",
-                # "wrap": true
               }
             ],
             "flex": 1
@@ -87,7 +86,13 @@ flexcontent2 = {
           },
           {
             "type": "text",
-            "text": "30mins"
+            "text": "タイプ数",
+            "color": "#8C8C8C",
+            "size": "sm",
+          },
+          {
+            "type": "text",
+            "text": "30"
           }
         ],
         "spacing": "md",
@@ -95,7 +100,6 @@ flexcontent2 = {
       },
       "styles": {
         "footer": {
-        #   "separator": false
         }
       }
     },
@@ -167,7 +171,6 @@ flexcontent2 = {
                 "text": "Active window",
                 "color": "#8C8C8C",
                 "size": "sm",
-                # "wrap": true
               }
             ],
             "flex": 1
@@ -178,7 +181,13 @@ flexcontent2 = {
           },
           {
             "type": "text",
-            "text": "20mins"
+            "text": "タイプ数",
+            "color": "#8C8C8C",
+            "size": "sm",
+          },
+          {
+            "type": "text",
+            "text": "20"
           }
         ],
         "spacing": "md",
@@ -186,7 +195,6 @@ flexcontent2 = {
       },
       "styles": {
         "footer": {
-        #   "separator": false
         }
       }
     },
@@ -258,7 +266,6 @@ flexcontent2 = {
                 "text": "Active window",
                 "color": "#8C8C8C",
                 "size": "sm",
-                # "wrap": true
               }
             ],
             "flex": 1
@@ -269,7 +276,13 @@ flexcontent2 = {
           },
           {
             "type": "text",
-            "text": "5mins"
+            "text": "タイプ数",
+            "color": "#8C8C8C",
+            "size": "sm",
+          },
+          {
+            "type": "text",
+            "text": "5"
           }
         ],
         "spacing": "md",
@@ -277,35 +290,10 @@ flexcontent2 = {
       },
       "styles": {
         "footer": {
-        #   "separator": false
         }
       }
     }
   ]
-}
-flex_content = {
-    "type": "bubble",
-    "direction": "ltr",
-    "body": {
-        "type": "box",
-        "layout": "vertical",
-        "contents": [
-            {
-                "type": "text",
-                "text": "Hello, Flex Message!",
-                "weight": "bold",
-                "size": "xl"
-            },
-            {
-                "type": "button",
-                "action": {
-                    "type": "uri",
-                    "label": "Open URL",
-                    "uri": "https://example.com"
-                }
-            }
-        ]
-    }
 }
 
 # Flex Messageオブジェクトを作成する
@@ -329,8 +317,10 @@ data = {
     "messages": [flex_message]
 }
 
-response = requests.post(line_api_url, headers=headers, json=data)
-print(response.status_code, response.text)
+
+def response():
+    response = requests.post(line_api_url, headers=headers, json=data)
+    print(response.status_code, response.text)
 
 if __name__ == "__main__":
-    app.run()
+    response()
