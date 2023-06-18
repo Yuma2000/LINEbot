@@ -354,7 +354,7 @@ def callback():
 
 @handler.add(MessageEvent, message=TextMessage)
 def message_text(event):
-    # print(event.message.text)
+    print(event.message.text)
     flex_message = FlexSendMessage(
         alt_text='hello',
         contents=flexcontent
