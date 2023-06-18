@@ -54,7 +54,7 @@ flexcontent = {
         "contents": [
           {
             "type": "text",
-            "text": "エンジニアA",
+            "text": "山田太郎",
             "color": "#ffffff",
             "align": "start",
             "size": "md",
@@ -149,7 +149,7 @@ flexcontent = {
         "contents": [
           {
             "type": "text",
-            "text": "エンジニアB",
+            "text": "鈴木二郎",
             "color": "#ffffff",
             "align": "start",
             "size": "md",
@@ -244,7 +244,7 @@ flexcontent = {
         "contents": [
           {
             "type": "text",
-            "text": "エンジニアC",
+            "text": "高橋三郎",
             "color": "#ffffff",
             "align": "start",
             "size": "md",
@@ -354,15 +354,24 @@ def callback():
 
 @handler.add(MessageEvent, message=TextMessage)
 def message_text(event):
-    print(event.message.text)
-    flex_message = FlexSendMessage(
+    if event.message.text == "先輩の忙しさを確認！":
+        flex_message = FlexSendMessage(
         alt_text='hello',
         contents=flexcontent
-    )
-    line_bot_api.reply_message(
-        event.reply_token,
-        flex_message
-    )
+        )
+        line_bot_api.reply_message(
+            event.reply_token,
+            flex_message
+        )
+    elif event.message.text == "新人の悩み度を確認！":
+        flex_message = FlexSendMessage(
+        alt_text='hello',
+        contents=flexcontent
+        )
+        line_bot_api.reply_message(
+            event.reply_token,
+            flex_message
+        )    
 
 
 if __name__ == "__main__":
